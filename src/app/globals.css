@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Змінні кольорів для світлої та темної теми */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #ff4500; /* Основний акцентний колір */
+  --secondary: #007acc; /* Другорядний колір */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,13 +18,87 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  @apply text-foreground bg-background antialiased;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Універсальні стилі для контейнерів */
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+  max-width: 1400px;
+}
+
+/* Адаптивна типографіка */
+h1 {
+  @apply text-3xl md:text-5xl font-bold;
+}
+
+h2 {
+  @apply text-2xl md:text-4xl font-semibold;
+}
+
+p {
+  @apply text-base md:text-lg leading-relaxed;
+}
+
+/* Кнопки */
+button {
+  @apply bg-primary text-white py-2 px-4 rounded hover:bg-primary-dark transition-colors;
+}
+
+/* Лінки */
+a {
+  @apply text-secondary hover:text-primary transition-colors;
+}
+
+/* Корекція відступів */
+img {
+  @apply max-w-full h-auto;
+  display: block;
+}
+
+/* Flexbox для макету сторінки */
+.header,
+.footer {
+  @apply flex justify-between items-center p-4 bg-foreground text-background;
+}
+
+.main-content {
+  @apply flex flex-col md:flex-row gap-8;
+}
+
+/* Сітка для галереї або списку продуктів */
+.products-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4;
+}
+
+body {
+  @apply text-foreground bg-background;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-gray-900 text-gray-100;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Кнопки та інтерактивні елементи з плавними ефектами */
+button {
+  @apply transition ease-in-out duration-200 transform hover:scale-105;
+}
+
+@media (max-width: 640px) {
+  .header,
+  .footer {
+    @apply flex-col;
   }
 }
