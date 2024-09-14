@@ -1,13 +1,11 @@
 import React from "react";
+// import Header from "./component/Header";
 
 const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-4 ">
-      <header className="bg-white shadow-md py-4 fixed w-full">
-        <h1 className="text-3xl font-bold text-center text-primary">
-          Italien Furniture
-        </h1>
-      </header>
+    {/* <Header/> */}
+    {/* Головна сторінка */}
       <main className="mt-14">
         <section className="text-center mb-8">
           <h2 className="text-2xl">
@@ -44,9 +42,9 @@ const HomePage: React.FC = () => {
           {/* Додаткові продукти */}
         </section>
       </main>
-      <footer className="bg-white shadow-md py-4 text-center mt-4">
+      {/* <footer className="bg-white shadow-md py-4 text-center mt-4">
         <p>© 2024 Italian Furniture</p>
-      </footer>
+      </footer> */}
     </div>
   );
 };

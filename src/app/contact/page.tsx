@@ -39,6 +39,27 @@ const Contacts: React.FC = () => {
             placeholder="Your Email"
           />
         </div>
+        <div>
+          <label
+            htmlFor="message"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Повідомлення
+          </label>
+          <textarea
+            name=""
+            id="message"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+            rows={4}
+            placeholder="Ваше повідомлення"
+          />
+        </div>
+         <button
+          type="submit"
+          className="w-full bg-primary text-white py-2 rounded-md"
+          >
+          Відправити
+          </button> 
       </form>
     </main>
   );
@@ -46,12 +67,3 @@ const Contacts: React.FC = () => {
 
 export default Contacts;
 
-// main.min-h-screen.bg-white.p-8>h1.text-3xl.font-semibold.text-primary.mb-4{Контакти}+p.text-lg.
-// text-gray-600.mb-6{Зв'яжіться з нами для отримання додаткової інформації.}+form.space-y-4.max-w-lg>
-//   (div>label[for="name"].block.text-sm.font-medium.text-gray-700{Ім'я}+
-//     input#name[type="text"].mt-1.block.w-full.p-2.border.border-gray-300.rounded-md[placeholder="Ваше ім'я"])+
-//     !(div>label[for="email"].block.text-sm.font-medium.text-gray-700{Email}+input#email[type="email"]
-//       .mt-1.block.w-full.p-2.border.border-gray-300.rounded-md[placeholder="Ваш email"])+(div>label[for="message"]
-//         .block.text-sm.font-medium.text-gray-700{Повідомлення}+textarea#message.mt-1.block.w-full.p-2.border
-//         .border-gray-300.rounded-md[rows=4][placeholder="Ваше повідомлення"])+button[type="submit"].w-full.bg-primary
-//         .text-white.py-2.px-4.rounded.hover\:bg-primary-dark.transition-colors{Надіслати}
