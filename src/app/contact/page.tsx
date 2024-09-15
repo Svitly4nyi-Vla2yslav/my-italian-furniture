@@ -2,7 +2,7 @@ import React from "react";
 
 const Contacts: React.FC = () => {
   return (
-    <main className="min-h-screen bg-white p-8">
+    <main className="min-h-screen bg-white p-8 mt-14">
       <h2 className="bg-white text-3xl font-semibold text-primary mb-4">
         Контакти
       </h2>

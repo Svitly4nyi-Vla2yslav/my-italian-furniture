@@ -102,3 +102,37 @@ button {
     @apply flex-col;
   }
 }
+
+
+.main_banner_logo_svg {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  z-index: 10000;
+  opacity: 0.7;
+}
+
+.main_banner_logo_svg svg text {
+  font-family: 'PFRegalDisplayPro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 105px;
+  transform: rotate(90deg);
+  transform-origin: 55% 55%;
+  stroke: rgb(255, 255, 255, 0.9);
+  animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset: 20%;
+      fill: rgb(31, 31, 31, 0.3);
+  }
+
+  100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: rgb(255, 255, 255, 0.9);
+  }
+}

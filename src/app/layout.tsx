@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./component/Header";
 import BurgerMenu from "./component/BurgerMenu";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Italian Furniture",
@@ -22,8 +23,15 @@ export default function RootLayout({
         <div className="hidden md:block top-0 left-0 right-0 fixed w-full z-50">
           <Header />
         </div>
-        <div className="block md:hidden fixed top-0 left-0 right-0 z-50 ">
-          <BurgerMenu />
+        <div className="flex justify-between px-4 md:hidden fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4">
+          <div className="">
+            <Link href="/" className="text-2xl font-bold text-primary">
+              Italian Furniture
+            </Link>
+          </div>
+          <div>
+            <BurgerMenu />
+          </div>
         </div>
         {children}
         <div className="">

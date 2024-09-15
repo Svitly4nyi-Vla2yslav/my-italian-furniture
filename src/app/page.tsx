@@ -1,9 +1,11 @@
 import React from "react";
+import HomeBackground from "./component/HomeBackground";
 // import Header from "./component/Header";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-4 ">
+    <div className="min-h-screen bg-gray-100">
+       <HomeBackground/>
     {/* <Header/> */}
     {/* Головна сторінка */}
       <main className="mt-14">

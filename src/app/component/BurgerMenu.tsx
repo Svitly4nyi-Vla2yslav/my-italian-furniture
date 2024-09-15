@@ -87,7 +87,12 @@ export default function BurgerMenu() {
     <div>
       {(["top"] as const).map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Button
+            className="text-2xl font-bold text-primary"
+            onClick={toggleDrawer(anchor, true)}
+          >
+            Menu
+          </Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

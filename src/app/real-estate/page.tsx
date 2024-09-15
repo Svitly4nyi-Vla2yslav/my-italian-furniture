@@ -2,7 +2,7 @@ import React from "react";
 
 const RealEstate: React.FC = () => {
   return (
-    <main className="min-h-screen bg-gray-100 p-8">
+    <main className="min-h-screen bg-gray-100 p-8 mt-14">
       <h2 className="text-3xl font-semibold text-primary mb-4">
         Нерухомість в Італії
       </h2>
