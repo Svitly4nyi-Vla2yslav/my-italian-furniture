@@ -84,7 +84,7 @@ export default function BurgerMenu() {
   );
 
   return (
-    <div>
+    <div className="text-2xl font-bold text-primary">
       {(["top"] as const).map((anchor) => (
         <React.Fragment key={anchor}>
           <Button

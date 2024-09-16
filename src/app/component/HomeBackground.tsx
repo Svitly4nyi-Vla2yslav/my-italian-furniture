@@ -6,7 +6,7 @@ const HomeBackground = () => {
     <div
       className='w-full h-screen relative overflow-hidden before:content-[""] before:absolute before:top-0 
     before:left-0 before:w-full before:h-full z-10 after:content-[""] after:absolute 
-    after:left-0 after:right-0 after:-bottom-px after:h-full 
+   before:opacity-30
     '
     >
       <video

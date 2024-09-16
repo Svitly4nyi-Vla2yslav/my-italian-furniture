@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#ff4500', // Основний колір
-        'primary-dark': '#e03e00', // Темніший варіант для hover
+        primary: 'white', // Основний колір
+        'primary-dark': 'gray', // Темніший варіант для hover
         secondary: '#007acc', // Другорядний колір
         foreground: 'var(--foreground)', // Кастомний колір foreground
         background: 'var(--background)', // Кастомний колір background
