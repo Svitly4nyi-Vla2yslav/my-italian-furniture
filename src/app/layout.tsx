@@ -23,7 +23,9 @@ export default function RootLayout({
         <div className="hidden md:block top-0 left-0 right-0 fixed w-full z-50">
           <Header />
         </div>
-        <div className="flex justify-between px-4 md:hidden fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4">
+        <div className="flex justify-between px-4
+         md:hidden fixed top-0 left-0 right-0 z-50
+         bg-transparent shadow-md py-4  hover:backdrop-brightness-75 active:backdrop-brightness-75">
           <div className="">
             <Link href="/" className="text-2xl font-bold text-primary">
               Italian Furniture

@@ -8,8 +8,6 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-// import InboxIcon from "@mui/icons-material/MoveToInbox";
-// import MailIcon from "@mui/icons-material/Mail";
 import React, { useState } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactIcon from "@mui/icons-material/ContactMail";
@@ -61,7 +59,7 @@ export default function BurgerMenu() {
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>{link.icon}</ListItemIcon>
-                <ListItemText> {link.text}</ListItemText>
+                <ListItemText className="text-gray-600 hover:to-black"> {link.text}</ListItemText>
               </ListItemButton>
             </ListItem>
           </Link>

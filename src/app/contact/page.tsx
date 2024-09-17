@@ -1,16 +1,20 @@
 import React from "react";
+import ImageBackground from "../component/ImageBackground";
 
 const Contacts: React.FC = () => {
   return (
-    <main className="min-h-screen bg-white p-8 mt-14">
-      <h2 className="bg-white text-3xl font-semibold text-primary mb-4">
+    <main className="w-full h-screen min-h-screen bg-transparent
+     flex flex-col mt-20 ml-0 
+    mr-auto items-center">
+      <ImageBackground/>
+      <h2 className="bg-transparent text-3xl font-semibold text-primary mb-4">
         Контакти
       </h2>
       <p className="text-lg text-gray-600 mb-6">
         {" "}
         Зв&apos;яжіться з нами для отримання додаткової інформації.
       </p>
-      <form className="space-y-4 max-w-lg ">
+      <form className="space-y-4 w-96">
         <div>
           <label
             htmlFor="name"
