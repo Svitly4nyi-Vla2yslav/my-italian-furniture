@@ -31,7 +31,7 @@ export default function RootLayout({
               Italian Furniture
             </Link>
           </div>
-          <div>
+          <div >
             <BurgerMenu />
           </div>
         </div>
