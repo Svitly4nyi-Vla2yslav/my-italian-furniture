@@ -1,12 +1,14 @@
 import React from "react";
+import ImageBackground from "../component/ImageBackground";
 
 const RealEstate: React.FC = () => {
   return (
-    <main className="min-h-screen bg-gray-100 p-8 mt-14">
-      <h2 className="text-3xl font-semibold text-primary mb-4">
+    <main className="min-h-screen flex flex-col flex-wrap  p-8 mt-14">
+      <ImageBackground/>
+      <h2 className="text-3xl text-center font-semibold text-primary mb-4">
         Нерухомість в Італії
       </h2>
-      <p className="text-lg text-gray-600">
+      <p className="text-lg text-center text-gray-600">
         {" "}
         Ми пропонуємо елітну нерухомість в найкрасивіших місцях Італії.
       </p>

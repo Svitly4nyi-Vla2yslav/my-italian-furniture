@@ -3,7 +3,8 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-transparent  shadow-md py-4 hover:backdrop-brightness-75 active:backdrop-brightness-75
+    <header className="bg-transparent  shadow-md py-4 hover:backdrop-brightness-75
+     active:backdrop-brightness-75
      ">
       <nav className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-primary">

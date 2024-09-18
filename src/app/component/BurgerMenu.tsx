@@ -14,6 +14,10 @@ import ContactIcon from "@mui/icons-material/ContactMail";
 import VillaIcon from "@mui/icons-material/Villa";
 import ChairIcon from "@mui/icons-material/Chair";
 import InfoIcon from "@mui/icons-material/Info";
+import ManageSearchIcon from "@mui/icons-material/ManageSearch";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+
 import Link from "next/link";
 
 type Anchor = "top";
@@ -52,6 +56,8 @@ export default function BurgerMenu() {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
+      className="bg-transparent flex flex-col justify-between items-center overflow-hidden"
+      // style={{backgroundColor: "transparent", blur: "filter"}}
     >
       <List>
         {links.map((link) => (
@@ -59,25 +65,16 @@ export default function BurgerMenu() {
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>{link.icon}</ListItemIcon>
-                <ListItemText className="text-gray-600 hover:to-black"> {link.text}</ListItemText>
+                <ListItemText className="text-gray-600 hover:to-black">
+                  {" "}
+                  {link.text}
+                </ListItemText>
               </ListItemButton>
             </ListItem>
           </Link>
         ))}
       </List>
       <Divider />
-      {/* <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List> */}
     </Box>
   );
 
@@ -85,12 +82,36 @@ export default function BurgerMenu() {
     <div className="text-2xl font-bold text-primary">
       {(["top"] as const).map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button
-            className="text-2xl font-bold text-primary"
-            onClick={toggleDrawer(anchor, true)}
-          >
-            Menu
-          </Button>
+          <ul className="flex flex-row items-center">
+            <li>
+              {" "}
+              <Button>
+                {" "}
+                <ManageSearchIcon
+                  style={{ fontSize: 32, color: "white" }}
+                />{" "}
+              </Button>
+            </li>
+            <li>
+              <Link href="/real-estate">
+                <FavoriteBorderIcon style={{ fontSize: 24, color: "white" }} />
+              </Link>
+            </li>
+            <li>
+
+            </li>
+            <li>
+              {" "}
+              <Button
+                style={{ fontSize: 32, color: "white" }}
+                className="text-2xl font-bold text-primary"
+                onClick={toggleDrawer(anchor, true)}
+              >
+                <MenuOpenIcon style={{ fontSize: 32, color: "white" }} />
+              </Button>
+            </li>
+          </ul>
+
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

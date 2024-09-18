@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scrollbar-width: none;
+}
+
 /* Змінні кольорів для світлої та темної теми */
 :root {
   --background: #ffffff;
