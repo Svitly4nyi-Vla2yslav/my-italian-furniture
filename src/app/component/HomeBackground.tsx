@@ -23,8 +23,38 @@ const HomeBackground: React.FC = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="absolute bottom-10 left-1/4 z-20">
-
+      <div className="absolute bottom-1 left-3/4 z-20 text-8xl h-full">
+        <div className="absolute top-[12%] right-[1%] ml-auto mr-0">
+          <nav>
+            <ul
+              className="flex justify-evenly text-base text-slate-100 border-b
+            border-t h-10 p-2 w-screen"
+            >
+              <li className="">КІМНАТИ</li>
+              <li className="">ПРЕДМЕТИ</li>
+              <li className="">БРЕНДИ</li>
+            </ul>
+          </nav>
+        </div>
+        <svg className="w-full h-full z-50">
+          <text
+            style={{ transformOrigin: "55% 55%" }}
+            className="sm:flex-none md:block rotate-90
+             stroke-slate-400 font-custom animate-textAnimate"
+            x="50%"
+            y="60%"
+            textAnchor="middle"
+          >
+            <tspan>F</tspan>
+            <tspan>U</tspan>
+            <tspan>R</tspan>
+            <tspan>N</tspan>
+            <tspan>I</tspan>
+            <tspan>T</tspan>
+            <tspan>U</tspan>
+            <tspan>R</tspan>
+          </text>
+        </svg>
       </div>
     </div>
   );

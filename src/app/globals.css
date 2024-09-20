@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   scrollbar-width: none;
 }
@@ -12,6 +13,13 @@
   --foreground: #171717;
   --primary: #ff4500; /* Основний акцентний колір */
   --secondary: #007acc; /* Другорядний колір */
+}
+
+@font-face {
+  font-family: 'Regul';
+  src: url("../app/fonts/PFRegalDisplayPro-Regular.woff2")  format('woff2');
+  /* font-weight: normal;
+  font-style: normal; */
 }
 
 @media (prefers-color-scheme: dark) {
