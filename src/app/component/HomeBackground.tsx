@@ -24,15 +24,30 @@ const HomeBackground: React.FC = () => {
         </video>
       </div>
       <div className="absolute bottom-1 left-3/4 z-20 text-8xl h-full">
-        <div className="absolute top-[12%] right-[1%] ml-auto mr-0">
+        <div className="absolute top-[12%] right-[-1%] xl:right-[-5%] 2xl:right-[-55%] ml-auto mr-0">
           <nav>
             <ul
               className="flex justify-evenly text-base text-slate-100 border-b
             border-t h-10 p-2 w-screen"
             >
-              <li className="">КІМНАТИ</li>
-              <li className="">ПРЕДМЕТИ</li>
-              <li className="">БРЕНДИ</li>
+              <li className="text-slate-100 ">
+                <a href="/" className="text-slate-100 ">
+                  {" "}
+                  КІМНАТИ
+                </a>
+              </li>
+              <li className="">
+                <a href="/" className="text-slate-100 ">
+                  {" "}
+                  ПРЕДМЕТИ
+                </a>
+              </li>
+              <li className="">
+                <a href="/" className="text-slate-100 ">
+                  {" "}
+                  БРЕНДИ
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
