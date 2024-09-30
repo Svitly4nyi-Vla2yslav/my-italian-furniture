@@ -57,7 +57,8 @@ export default function BurgerMenu() {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      className="bg-transparent flex flex-col justify-between items-center overflow-hidden"
+      className="bg-transparent flex flex-col justify-between items-center 
+      overflow-hidden"
       // style={{backgroundColor: "transparent", blur: "filter"}}
     >
       <List>
@@ -86,21 +87,19 @@ export default function BurgerMenu() {
           <ul className="flex flex-row items-center">
             <li>
               {" "}
-              <Button>
+            
                 {" "}
                 <SearchAppBar
-                  // style={{ fontSize: 32, color: "white" }}
+                // style={{ fontSize: 32, color: "white" }}
                 />
-              </Button>
+            
             </li>
             <li>
               <Link href="/real-estate">
                 <FavoriteBorderIcon style={{ fontSize: 24, color: "white" }} />
               </Link>
             </li>
-            <li>
-
-            </li>
+            <li></li>
             <li>
               {" "}
               <Button
