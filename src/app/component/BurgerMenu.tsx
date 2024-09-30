@@ -14,11 +14,12 @@ import ContactIcon from "@mui/icons-material/ContactMail";
 import VillaIcon from "@mui/icons-material/Villa";
 import ChairIcon from "@mui/icons-material/Chair";
 import InfoIcon from "@mui/icons-material/Info";
-import ManageSearchIcon from "@mui/icons-material/ManageSearch";
+// import ManageSearchIcon from "@mui/icons-material/ManageSearch";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 import Link from "next/link";
+import SearchAppBar from "./Search";
 
 type Anchor = "top";
 
@@ -87,9 +88,9 @@ export default function BurgerMenu() {
               {" "}
               <Button>
                 {" "}
-                <ManageSearchIcon
-                  style={{ fontSize: 32, color: "white" }}
-                />{" "}
+                <SearchAppBar
+                  // style={{ fontSize: 32, color: "white" }}
+                />
               </Button>
             </li>
             <li>

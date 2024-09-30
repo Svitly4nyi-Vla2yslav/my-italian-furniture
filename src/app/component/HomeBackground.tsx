@@ -28,7 +28,9 @@ const HomeBackground: React.FC = () => {
           <nav>
             <ul
               className="flex justify-evenly text-base text-slate-100 border-b
-            border-t h-10 p-2 w-screen"
+            border-t h-10 p-2 w-screen shadow
+    hover:backdrop-brightness-75
+     active:backdrop-brightness-75"
             >
               <li className="text-slate-100 ">
                 <a href="/" className="text-slate-100 ">
