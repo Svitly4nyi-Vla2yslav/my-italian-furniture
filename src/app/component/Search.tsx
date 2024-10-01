@@ -2,8 +2,9 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
-import InputBase from "@mui/material/InputBase";
+// import InputBase from "@mui/material/InputBase";
 import ManageSearchIcon from "@mui/icons-material/ManageSearch";
+import ComboBox from "./ComboBox";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -33,30 +34,30 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   justifyContent: "center",
 }));
 
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  position: "relative",
-  bottom: 5,
-  right: 25,
-  color: "white",
-  width: "100%",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    [theme.breakpoints.up("sm")]: {
-      position: "relative",
-      backgroundColor: "transparent",
-      bottom: 30,
-      width: "0ch",
-      "&:focus": {
-        width: "20ch",
-        borderBottom: "1px solid #000000a3",
+// const StyledInputBase = styled(InputBase)(({ theme }) => ({
+//   position: "relative",
+//   bottom: 5,
+//   right: 25,
+//   color: "white",
+//   width: "100%",
+//   "& .MuiInputBase-input": {
+//     padding: theme.spacing(1, 1, 1, 0),
+//     // vertical padding + font size from searchIcon
+//     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+//     transition: theme.transitions.create("width"),
+//     [theme.breakpoints.up("sm")]: {
+//       position: "relative",
+//       backgroundColor: "transparent",
+//       bottom: 30,
+//       width: "0ch",
+//       "&:focus": {
+//         width: "20ch",
+//         borderBottom: "1px solid #000000a3",
       
-      },
-    },
-  },
-}));
+//       },
+//     },
+//   },
+// }));
 
 export default function SearchAppBar() {
   return (
@@ -73,7 +74,9 @@ export default function SearchAppBar() {
         <SearchIconWrapper>
           <ManageSearchIcon style={{ fill: "white", width: 39, height: 30 }} />
         </SearchIconWrapper>
-        <StyledInputBase />
+        {/* <StyledInputBase/> */}
+        <ComboBox/>
+       
       </Search>
     </Box>
   );

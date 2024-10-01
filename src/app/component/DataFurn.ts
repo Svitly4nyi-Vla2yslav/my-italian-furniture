@@ -223,3 +223,5 @@ export const DataFurn = {
         },
     ],
 };
+
+export default DataFurn;
