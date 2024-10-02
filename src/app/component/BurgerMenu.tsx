@@ -19,7 +19,7 @@ import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 import Link from "next/link";
-import SearchAppBar from "./Search";
+// import SearchAppBar from "./Search";
 
 type Anchor = "top";
 
@@ -89,9 +89,7 @@ export default function BurgerMenu() {
               {" "}
             
                 {" "}
-                <SearchAppBar
-                // style={{ fontSize: 32, color: "white" }}
-                />
+             
             
             </li>
             <li>
