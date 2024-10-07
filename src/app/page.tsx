@@ -5,7 +5,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-transparent">
       <HomeBackground />
-      <main className="mt-14 ">
+      <main className="mt-14 relative">
         <section className="text-center mb-8 ">
           <h2 className="text-2xl">
             Ласкаво просимо на сайт італійських меблів

@@ -4,8 +4,7 @@ import React from "react";
 
 const ImageBackground: React.FC = () => {
   return (
-    <div
-      className=''
+    <div 
     >
       <img
         src="/bg.webp"
