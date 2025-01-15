@@ -85,13 +85,7 @@ export default function BurgerMenu() {
       {(["top"] as const).map((anchor) => (
         <React.Fragment key={anchor}>
           <ul className="flex flex-row items-center">
-            <li>
-              {" "}
-            
-                {" "}
-             
-            
-            </li>
+            <li> </li>
             <li>
               <Link href="/real-estate">
                 <FavoriteBorderIcon style={{ fontSize: 24, color: "white" }} />

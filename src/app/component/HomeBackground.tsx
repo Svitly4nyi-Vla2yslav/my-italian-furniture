@@ -9,7 +9,7 @@ const HomeBackground: React.FC = () => {
         before:content-[""] before:top-0 
        before:left-0 before:w-full before:h-full 
         after:content-[""] after:absolute  before:opacity-50 before:bg-black before:fixed'
-       >
+      >
         <video
           className="fixed top-1/2 left-1/2 w-full h-full
          object-cover -translate-x-1/2 -translate-y-1/2 -z-10 "
