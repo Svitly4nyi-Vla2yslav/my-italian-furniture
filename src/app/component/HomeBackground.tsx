@@ -1,4 +1,5 @@
 import React from "react";
+import { Rings } from "./Rings";
 // import Video from "../../../public/home-video.mp4"
 
 const HomeBackground: React.FC = () => {
@@ -50,7 +51,8 @@ const HomeBackground: React.FC = () => {
               </li>
             </ul>
           </nav>
-        </div>
+        
+        </div>  <Rings top="" right="-300px" bottom="40px" left="" /> 
         <svg className="w-full h-full z-50">
           <text
             style={{ transformOrigin: "55% 55%" }}
