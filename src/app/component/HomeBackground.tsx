@@ -22,6 +22,9 @@ const HomeBackground: React.FC = () => {
           Your browser does not support the video tag.
         </video>
       </div>
+      <div className="absolute bottom-20 left-20">
+        <Rings top="" right="-300px" bottom="40px" left="" />
+      </div>
       <div className="absolute bottom-1 left-3/4 z-50 text-8xl h-full">
         <div className="absolute top-[12%] right-[-1%] xl:right-[-5%] 2xl:right-[-55%] ml-auto mr-0">
           <nav>
@@ -51,8 +54,7 @@ const HomeBackground: React.FC = () => {
               </li>
             </ul>
           </nav>
-        
-        </div>  <Rings top="" right="-300px" bottom="40px" left="" /> 
+        </div>
         <svg className="w-full h-full z-50">
           <text
             style={{ transformOrigin: "55% 55%" }}
